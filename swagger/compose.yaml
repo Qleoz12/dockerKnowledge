@@ -1,0 +1,12 @@
+version: "3.9"
+services:
+
+  swagger:
+    # build: "../database-image"
+    image: "swaggerapi/swagger-editor"
+    container_name: "swaggerapi-swagger-editor-container"
+    ports:
+      - "9980:8080"
+    cpus: 0.3
+    mem_limit: 512m
+    mem_reservation: 128m
